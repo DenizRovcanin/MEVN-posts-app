@@ -1,0 +1,24 @@
+.DS_Store
+.idea
+.vscode
+
+*-compiled*
+node_modules/
+bower_components/
+build/
+admin-ui/build/
+customer-ui/build/
+external-ui/build/
+tmp/
+uploads/
+nginx/ssl/*.crt
+nginx/ssl/*.key
+npm-debug.log
+npm-debug.log.*
+.env
+coverage/
+.nyc_output/
+
+# Ignore redis binary dump (dump.rdb) files
+dump.rdb
+yarn-error.log
