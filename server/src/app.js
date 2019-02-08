@@ -55,7 +55,7 @@ app.post('/posts', (req, res) => {
 
     res.send({
       success: true,
-      message: "Post saved successfully",
+      message: "Post saved successfully to database",
     })
   })
 });
@@ -63,7 +63,7 @@ app.post('/posts', (req, res) => {
 app.get('/post/:id', (req, res) => {
   Post.findById(req.params.id, 'title description', (error, post) => {
     if(error) {
-      console.log(error)
+      console.log(error);
       res.status(500).send({
         success: false,
         message: 'Cannot get post',
